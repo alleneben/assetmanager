@@ -2,7 +2,7 @@
 export default {
   fxns: {
     // endpoint:'http://asset.gra.themaduka.com/biz/bis/',
-    endpoint:'http://asset.loc/biz/bis/',
+    endpoint:'http://172.16.9.11/asset/biz/bis/',
     login: (params,url) => fetch(url,{method: 'post', body: params}).then(res => res.json()),
     base: (params,url) => fetch(url,{method: 'post', body: params}).then(res => res.json()),
     basicdata: (params,url) => fetch(url,{method: 'post', body: params}).then(res => res.json()),
